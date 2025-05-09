@@ -8,6 +8,11 @@
     --link-color: #ffffff;
     --hover-color: #444;
   }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
   body{
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
