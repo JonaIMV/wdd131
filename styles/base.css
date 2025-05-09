@@ -22,6 +22,7 @@
     text-align: center;
   }
   nav {
+    display: flex;
     background-color: var(--secondary-color);
     text-align: center;
     padding: 0.5rem;
@@ -49,15 +50,29 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background-color: #f9f9f9;
   }
-  .card h2, .card h4 {
+  .card h2  {
   background-color: var(--primary-color);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
   text-align: center;
 }
+.card h4{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+  }
 
+ul li {
+    display: grid;
+    justify-content: center;
+    text-align: left; 
+    padding: 10px;
+}
 .subh3 {
+    text-decoration: underline;
     position: relative;
     left: 35%;
     background-color: transparent;
@@ -69,14 +84,10 @@
     font-weight: bold;
     
   }
-  nav h4 ul{
-    display: flex;
-    justify-content:center; 
-    text-align: left;
-    flex: 1 0 auto;
-    flex-direction: column;
-  }    
- 
+
+  section.card ul li a {
+    color: #333; 
+ }    
   .profile-img {
     position: relative;
     bottom: 7%;
