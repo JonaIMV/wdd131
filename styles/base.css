@@ -69,15 +69,14 @@
     font-weight: bold;
     
   }
-  .list{
-    display: grid;
+  nav h4 ul{
+    display: flex;
     justify-content:center; 
     text-align: left;
-    padding: 20px;
-
-  }
-    
-    
+    flex: 1 0 auto;
+    flex-direction: column;
+  }    
+ 
   .profile-img {
     position: relative;
     bottom: 7%;
