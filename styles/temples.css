@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #3b0066;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+#menu {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #3b0066;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-links li a:hover {
+  background-color: #5e17eb;
+  color: #fff8ff;          
+}
+
+.gallery-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #4B0082; /* o el color que uses para acentos */
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.temple-gallery figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.temple-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3b0066;
+  color: white;
+}

@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: transparent;
+    padding-right: 1rem;
+  }
+
+  .nav-links li a {
+    border: none;
+    padding: 1rem;
+    color: white;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+    .temple-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    
+}
