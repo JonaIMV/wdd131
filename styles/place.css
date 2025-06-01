@@ -41,6 +41,7 @@ main {
 .hero{
     position: relative;
     text-align: center;
+    padding: 1rem;
   }
 
 .hero picture,
