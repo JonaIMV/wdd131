@@ -48,7 +48,6 @@
 
   
   section:nth-of-type(3) h2::after {
-    content: "🌤️";
     margin-left: 8px;
     font-size: 1.2rem;
   }
