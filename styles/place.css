@@ -40,7 +40,8 @@ main {
 }
 .hero{
     position: relative;
-}
+    text-align: center;
+  }
 
 .hero picture,
 .hero img {
