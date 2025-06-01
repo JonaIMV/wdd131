@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --primary-color: #4CC9F0;
   --accent-color:  #B5179E;
@@ -24,22 +29,32 @@ header {
   color:#ffffff;
   text-align: center;
   padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
 }
 .hero{
     position: relative;
 }
+
+.hero picture,
 .hero img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
+}
+.data section,
+.weather section{
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 section {
@@ -48,12 +63,20 @@ section {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+.data section .data-image{
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 6px;
+}
 
 h2 {
   color: var(--primary-color);
 }
 
-.weather {
+.weather-section .weather {
   width: 48px;
   height: 48px;
   display: block;
