@@ -1,0 +1,47 @@
+@media screen and (min-width: 900px) {
+  main {
+    position: relative;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  
+  section:nth-of-type(2),
+  section:nth-of-type(3) {
+    position: absolute;
+    top: 20%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  section:nth-of-type(2) {
+    left: 5%;
+  }
+
+  section:nth-of-type(3) {
+    right: 5%;
+  }
+
+  section h2 {
+    background-color: #3A0CA3; 
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  
+  section:nth-of-type(3) h2::after {
+    content: "🌤️";
+    margin-left: 8px;
+    font-size: 1.2rem;
+  }
+}
