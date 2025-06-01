@@ -63,13 +63,17 @@ section {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.data section .data-image{
+.data section {
   width: 100%;
   max-width: 320px;
   height: auto;
   display: block;
   margin: 0 auto 1rem auto;
   border-radius: 6px;
+}
+.data-image {
+  width: 15%;
+  margin-top: 1rem;
 }
 
 h2 {
