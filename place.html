@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals." />
+  <meta name="author" content="Jonathan Isai Morales Valencia" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-large.css" />
+  <script src="scripts/place.js" defer></script>
+  <title>WDD 131 – Place</title>
+</head>
+<body>
+  <header>
+    <h1>Cancun</h1>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/cancun-small.jpg" />
+        <source media="(min-width: 900px)" srcset="images/cancun-medium.jpg" />
+        <img src="images/cancun-large.jpg" alt="cancun beach" />
+      </picture>
+    </section>
+
+    <section>
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area: </strong>1,270,000,000 sq m</li>
+        <li><strong>Population: </strong>934,189</li>
+        <li><strong>Official name: </strong>Benito Juarez</li>
+        <li><strong>Languages: </strong>Spanish</li>
+        <li><strong>Currency: </strong>Peso Mexicano</li>
+        <li><strong>Time zone: </strong>GMT-5</li>
+        <li><strong>Calling code: </strong>+52998</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Weather</h2>
+      <img src="images/sun.png" alt="Weather icon" width="48" height="48" />
+      <ul>
+        <li><strong>Temperature: </strong>30°C</li>
+        <li><strong>Conditions: </strong>Sunny</li>
+        <li><strong>Wind: </strong>15 km/h</li>
+        <li><strong>Wind Chill: </strong><span id="windchill"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Jonathan Isai Morales Valencia | Quintana Roo, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
