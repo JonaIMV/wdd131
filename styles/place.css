@@ -11,7 +11,7 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family:"Roboto", sans-serif;
+  font-family: 'Source sans 3', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
