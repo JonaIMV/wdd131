@@ -99,6 +99,7 @@ const templeContainer = document.getElementById("temple-container");
 
 
 function displayTemples(filter) {
+    console.log("Filter selected:", filter);
     
     templeContainer.innerHTML = "";
 
@@ -132,6 +133,7 @@ function displayTemples(filter) {
 
         templeContainer.appendChild(templeCard);
     });
+    console.log("Filtered temples:", filteredTemples);
 }
 
 
@@ -144,5 +146,4 @@ document.getElementById("small").addEventListener("click", () => displayTemples(
 
 displayTemples("home");
 
-console.log("Filter selected:", filter);
-console.log("Filtered temples:", filteredTemples);
+
