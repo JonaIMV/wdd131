@@ -121,11 +121,13 @@ function displayTemples(filter) {
         templeCard.classList.add("temple-card");
 
         templeCard.innerHTML = `
-            <h2>${temple.templeName}</h2>
-            <p><strong>Location:</strong> ${temple.location}</p>
-            <p><strong>Dedicated on:</strong> ${temple.dedicated}</p>
-            <p><strong>Area:</strong> ${temple.area} square feet</p>
             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+          <div>
+                <h2>${temple.templeName}</h2>
+                <p><strong>Location:</strong> ${temple.location}</p>
+                <p><strong>Dedicated on:</strong> ${temple.dedicated}</p>
+                <p><strong>Area:</strong> ${temple.area} square feet</p>
+                </div>
         `;
 
         templeContainer.appendChild(templeCard);
