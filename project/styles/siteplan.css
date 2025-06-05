@@ -22,7 +22,7 @@ h1 {
 }
 .logo {
    
-    width: 80px;
+    width: 120px;
     height: auto;
     margin-right: 10px;
 }
@@ -84,7 +84,18 @@ main {
     background-color: #e0f4ff;
     color: #03045e;
 }
-
+.card:nth-of-type(6){
+    background-color: #669bbc;
+    color: #ffffff;
+}
+.card:nth-of-type(7){
+    background-color:#003049;
+    color: #ffffff;
+}
+.card:nth-of-type(8){
+    background-color:#0077b6;
+    color: #ffffff;
+}
 
 .card img {
     max-width: 100%;
