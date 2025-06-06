@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review confirmation page.">
+  <meta name="author" content="Jonathan Isai Morales Valencia">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/form-large.css">
+  <title>Review Submitted</title>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
+  </main>
+
+  <footer>
+    <p><span id="year"></span> Jonathan Isai Morales Valencia Quintana Roo, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    
+    const countKey = "reviewCount";
+    let reviewCount = Number(localStorage.getItem(countKey)) || 0;
+    reviewCount++;
+    localStorage.setItem(countKey, reviewCount);
+    document.getElementById("reviewCount").textContent = reviewCount;
+
+    
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
