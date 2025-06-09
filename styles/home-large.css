@@ -18,15 +18,24 @@ body {
   padding: 1rem;
   flex-wrap: nowrap;
 }
-
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .logo img {
-  height: 60px;
+  height: 100px;
+}
+.brand h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .navbar h1 {
   font-size: 2rem;
   margin: 0 1rem;
   flex-grow: 1;
+  min-width: 0;
 }
 
 #menu-toggle {
@@ -35,6 +44,8 @@ body {
   color: white;
   font-size: 2rem;
   cursor: pointer;
+  order: 3;
+  flex-shrink: 0;
 }
 
 
@@ -44,7 +55,7 @@ body {
   flex-direction: column;
   width: 100%;
   text-align: right;
-  background-color: #003049;
+  background-color: #03045e;
 }
 
 .nav-links a {
