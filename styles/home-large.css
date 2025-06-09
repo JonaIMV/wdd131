@@ -1,29 +1,134 @@
 @media screen and (min-width: 1024px) {
-  .hero {
-  height: 450px;
-  padding: 2rem 4rem;
+
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003049;
+  color: white;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  margin: 0 1rem;
+  flex-grow: 1;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: right;
+  background-color: #003049;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+
+
+.hero {
+  position: relative;
+  margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
 }
 
 .hero-text h2 {
-  font-size: 3rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .hero-text p {
-  font-size: 1.25rem;
+  margin: 0.5rem 0 0 0;
 }
 
+
 .content {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .card img {
-  max-height: 180px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #003049;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+
 footer {
-  padding: 2rem;
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 }
