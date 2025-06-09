@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  #menu-toggle {
+    display: block; /* SIEMPRE visible */
+  }
+
+  .nav-links {
+    right: 2rem;
+    top: 80px;
+  }
+
+  .nav-links a:hover {
+    background-color: #669bbc;
+    border-radius: 4px;
+  }
+}
