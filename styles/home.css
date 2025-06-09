@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #003049;
+  background-color: #03045e;
   color: white;
   padding: 1rem;
 }
@@ -26,6 +26,7 @@ header {
   display: none;
   flex-direction: column;
   width: 100%;
+  background-color: #003049;
 }
 .nav-links.show {
   display: flex;
@@ -77,10 +78,18 @@ header {
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: #f5f5f5;
+  border-radius: 12px;
   overflow: hidden;
-  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -95,7 +104,7 @@ header {
 }
 
 footer {
-  background-color: #003049;
+  background-color: #03045e;
   color: white;
   text-align: center;
   padding: 1rem;
