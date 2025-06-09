@@ -1,19 +1,15 @@
-@media screen and (min-width: 768px) {
-  .navbar {
-    padding: 1rem 2rem;
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 450px; /* más alto en desktop */
+    padding: 2rem 4rem;
+    background-position: top left; /* mantiene la parte superior visible */
   }
 
-  #menu-toggle {
-    display: block; /* SIEMPRE visible */
+  .hero-text h2 {
+    font-size: 3rem;
   }
 
-  .nav-links {
-    right: 2rem;
-    top: 80px;
-  }
-
-  .nav-links a:hover {
-    background-color: #669bbc;
-    border-radius: 4px;
+  .hero-text p {
+    font-size: 1.25rem;
   }
 }
