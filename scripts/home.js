@@ -1,6 +1,10 @@
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  const menu = document.getElementById("nav-menu");
-  menu.classList.toggle("show");
-});
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = `Last modified: ${document.lastModified}`;
+const yearSpan = document.querySelector("#year");
+const lastModSpan = document.querySelector("#lastModified");
+
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
+
+if (lastModSpan) {
+  lastModSpan.textContent = `Last modified: ${document.lastModified}`;
+}
