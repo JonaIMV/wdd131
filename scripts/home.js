@@ -1,10 +1,20 @@
-const yearSpan = document.querySelector("#year");
-const lastModSpan = document.querySelector("#lastModified");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+  const yearSpan = document.querySelector("#year");
+  const lastModSpan = document.querySelector("#lastModified");
 
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("show");
+    });
+  }
 
-if (lastModSpan) {
-  lastModSpan.textContent = `Last modified: ${document.lastModified}`;
-}
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  if (lastModSpan) {
+    lastModSpan.textContent = `Last modified: ${document.lastModified}`;
+  }
+});
