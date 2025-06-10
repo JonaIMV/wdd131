@@ -165,5 +165,25 @@ footer {
   border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+/*About Us section*/
+.coach-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.coach-container .card {
+  flex: 1;
+}
+
+.coach-text {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 }
