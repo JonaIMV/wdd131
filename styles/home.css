@@ -141,6 +141,7 @@ header {
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: 50% 37%;
   max-height: 200px;
 }
 .card h3 {
@@ -238,7 +239,7 @@ footer {
 }
 
 .coach-text {
-  background-color: #fefae0;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 1rem;
