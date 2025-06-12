@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toros Fuerza Rugby Website" >
+  <meta name="author" content="Jonathan Isai Morales Valencia" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:wght@600&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/home-large.css" media="screen and (min-width: 1024px)">
+  <title>Toros Fuerza Rugby</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="brand">
+                <div class="logo">
+                    <img src="images/toros.png" alt="Toros Fuerza Rugby logo">
+                </div>
+                <h1>Toros Fuerza Rugby</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <nav class="nav-links" id="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about-us.html">About</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+         <section class="hero">
+        <img src="images/team.jpeg" alt="Rugby team playing on a  field" class="hero-img">
+        <div class="hero-text">
+            <h2>Welcome to Toros Fuerza Rugby</h2>
+            <p>Join us in our journey through the world of rugby!</p>
+        </div>
+    </section>
+    
+    <section class="contact-layout">
+        <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+            <p id="form-feedback" style="margin-top: 1rem; "></p>
+        </form>
+        </div>
+
+        <div class="map-container">
+        <h2>Our Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.1545106568277!2d-86.87072412489126!3d20.854481198178193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e43364c00fcab%3A0xd9f2a61a77c85782!2sPuerto%20Morelos%2C%20Q.R.!5e0!3m2!1sen!2smx!4v1718041996434!5m2!1sen!2smx"  
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </section>
+    </main>
+    <footer>
+    <p><span id="year"></span> Jonathan Isai Morales Valencia · Quintana Roo, Mexico</p>
+    <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/home.js"></script>
+</body>
+</html>    

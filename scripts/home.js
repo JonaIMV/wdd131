@@ -19,6 +19,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = contactForm.name.value.trim();
+      const email = contactForm.email.value.trim();
+      const message = contactForm.message.value.trim();
+
+      const formData = {
+        timestamp: new Date().toISOString(),
+        name,
+        email,
+        message,
+      };
+
+      let submissions = JSON.parse(localStorage.getItem("contactSubmissions")) || [];
+      submissions.push(formData);
+      localStorage.setItem("contactSubmissions", JSON.stringify(submissions));
+
+      document.getElementById("form-feedback").textContent = "Thanks! Your message was saved locally.";
+      contactForm.reset();
+    });
+  }
+
+  
   if (
     document.getElementById("toros-gallery-container") &&
     document.getElementById("coach-gallery-container")
@@ -44,13 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
         img.src = image.src;
         img.alt = image.alt;
         img.loading = "lazy";
-
-        
         img.classList.add("fade-in");
         if (index === 0) {
           img.classList.add("hover-zoom");
         }
-
         container.appendChild(img);
       });
     }
@@ -64,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    
     createGallery("toros-gallery-container", torosImages);
     createGallery("coach-gallery-container", coachImages);
 

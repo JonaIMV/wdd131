@@ -360,3 +360,94 @@ footer {
   border-radius: 12px;
   flex: 0 0 auto;
 }
+/*contact section*/
+
+.contact-section {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-form label {
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contact-form button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #03045e;
+}
+
+.map-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.map-section h2 {
+  color: #03045e;
+  margin-bottom: 1rem;
+}
+
+.contact-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-form-container,
+.map-container {
+  flex: 1;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 0;
+}
+/*submission section*/
+.submission-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.submission-table th,
+.submission-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.submission-table th {
+  background-color: #03045e;
+  color: white;
+}

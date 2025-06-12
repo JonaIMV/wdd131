@@ -233,4 +233,9 @@ footer {
 .gallery-stack.expanded img {
   max-width: 220px;
 }
+/*Contact section*/
+ .contact-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
