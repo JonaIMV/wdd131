@@ -197,5 +197,40 @@ footer {
 .coach-text:hover {
   transform: scale(1.02);
 }
+/*gallery section*/
+.stack-gallery {
+    margin: 3rem auto;
+    padding: 2rem;
+  }
 
+  .stack-gallery h3 {
+    font-size: 2rem;
+  }
+
+  .gallery-stack {
+    height: 350px;
+    max-width: 500px;
+  }
+
+  .gallery-stack img {
+    border-radius: 12px;
+  }
+
+  .gallery-stack img:nth-child(2) {
+    top: 8px;
+    left: 8px;
+  }
+
+  .gallery-stack img:nth-child(3) {
+    top: 16px;
+    left: 16px;
+  }
+
+  .gallery-stack img:nth-child(4) {
+    top: 24px;
+    left: 24px;
+  }
+.gallery-stack.expanded img {
+  max-width: 220px;
+}
 }
