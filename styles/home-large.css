@@ -1,4 +1,23 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width:768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: auto;
+    background-color: transparent;
+    position: static;
+  }
+
+  .nav-links a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+  }
+}
 
 
 body {
